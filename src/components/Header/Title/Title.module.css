@@ -1,0 +1,25 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px auto;
+    margin: 10px;
+
+}
+.title {
+    color: blue;
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+.fake {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: blue;
+    align-self: center;
+    justify-self: center;
+}

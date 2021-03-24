@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    position: fixed;
+    height: 80px;
+    width: 75%;
+    bottom: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+}
+
+.openWrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    display: grid;
+    height: 500px;
+    position: fixed;
+    width: 75%;
+    bottom: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+}

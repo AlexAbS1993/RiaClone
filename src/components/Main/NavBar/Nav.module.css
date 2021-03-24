@@ -1,0 +1,22 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    height: 45px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.link {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    padding: 8px 4px 8px 4px;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 0 0 5px gray;
+}
+
+.link:hover {
+    color: rgb(56, 81, 224)
+}

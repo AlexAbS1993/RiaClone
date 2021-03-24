@@ -1,0 +1,11 @@
+.wrapper {
+    position: fixed;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    display: grid;
+    grid-template-columns: 4fr 10fr 2fr;
+    align-items: center;
+    width: 75%;
+    font-weight: 600;
+}

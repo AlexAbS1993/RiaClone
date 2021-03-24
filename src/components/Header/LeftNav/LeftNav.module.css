@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 3/4;
+}
+
+.wrapper>div {
+    padding: 5px;
+}
+
+.link {
+    color: rgb(34, 34, 124);
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.link:hover{
+    color: rgb(126, 126, 212);
+    cursor: pointer;
+}
