@@ -4,6 +4,15 @@
     height: 45px;
     align-items: center;
     margin-right: 20px;
+    width: 100%;
+}
+.secondWrapper {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    height: 45px;
+    align-items: center;
+    margin-right: 20px;
+    width: 130%;
 }
 
 .link {
@@ -19,4 +28,46 @@
 
 .link:hover {
     color: rgb(56, 81, 224)
+}
+
+@media screen and (max-width: 1270px){
+    .wrapper {
+        grid-template-columns: repeat(6, auto);
+        margin-bottom: 50px;
+    }
+    .secondWrapper {
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 120px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .wrapper {
+        grid-template-columns: repeat(4, auto);
+        margin-bottom: 100px;
+    }
+    .secondWrapper {
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 120px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .wrapper {
+        grid-template-columns: repeat(3, auto);
+        margin-bottom: 180px;
+    }
+    .secondWrapper {
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 120px;
+        width: 100%;
+    }
+    .link:nth-child(10){
+        grid-column: 1/4;
+    }
+    .link:nth-child(11){
+        grid-column: 1/4;
+    }
 }

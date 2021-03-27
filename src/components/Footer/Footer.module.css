@@ -20,3 +20,14 @@
     background-color: white;
     box-shadow: 0 0 10px gray;
 }
+
+@media screen and (max-width: 910px){
+    .wrapper {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px){
+    .wrapper {
+        display: none;
+    }
+}

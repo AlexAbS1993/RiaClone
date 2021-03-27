@@ -1,0 +1,52 @@
+.block12_articles {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.block12_dblimg {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 296px 296px;
+    gap: 10px;
+    width: 100%;
+}
+
+.block12_img {
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+}
+
+.block12_img>img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.block12_discription>span {
+    font-size: 13px;
+}
+
+.block12_discription {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.block12_articles>div{
+    border-bottom: 1.3px rgb(170, 166, 166) solid;
+}
+
+.block12_articles>div:last-child {
+    border-bottom: none
+}

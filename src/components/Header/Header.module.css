@@ -8,4 +8,33 @@
     align-items: center;
     width: 75%;
     font-weight: 600;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1520px){
+    .wrapper {
+        width: 100%;
+        grid-template-columns: 4fr 3fr 2fr;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .wrapper {
+        width: 100%;
+        grid-template-columns: 4fr 3fr 4fr;
+    }
+}
+
+@media screen and (max-width: 776px){
+    .wrapper {
+        width: 100%;
+        grid-template-columns: 4fr 1fr 3fr;
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    .wrapper {
+        display: none;
+    }
 }

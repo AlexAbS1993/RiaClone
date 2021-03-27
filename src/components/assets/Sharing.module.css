@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4, 1fr);
+    width: 150px;
+    height: 50px;
+    bottom: 6px;
+    right: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.wrapper>a {
+    color: rgba(90, 87, 87, 0.815) !important;
+}
+
+.wrapper>a:hover {
+    color: rgba(0, 0, 0, 0.678) !important;
+}
+
+@media screen and (max-width: 743px){
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0px;
+        width: 100px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.603);
+    display: grid;
+    align-items: center;
+    position: absolute;
+    top: 0px
+}
+
+.modal{
+    width: 700px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-left: 20%;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+input {
+    border: none;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}

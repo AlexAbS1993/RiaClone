@@ -1,11 +1,13 @@
 import classes from './News.module.css'
 import React, { useEffect, useRef, useState } from 'react'
 import { NewsDetail } from './NewsDetail'
+import {debounce} from '../../../utilities/functions'
 
 export const News = ({isOpen}) => {
     const [news, setNews] = useState([])
     const [newsCount, setNewsCount] = useState(5)
     const newsRef = useRef()
+    
  // Читаем скроллы 
     useEffect(() => {
         function onScroll(){
@@ -13,13 +15,12 @@ export const News = ({isOpen}) => {
                 setNewsCount(prev => prev + 1)
             }
         }
-        newsRef.current.addEventListener("scroll", onScroll)
-        return () => newsRef.current.removeEventListener("scroll", onScroll)
+        newsRef.current.addEventListener("scroll", debounce(onScroll.bind(newsRef.current), 200) )
+        // return () => newsRef.current.removeEventListener("scroll", debounce(onScroll.bind(newsRef.current), 200))
     }, [])
 
- // Запрос новостей в ленту
+ // Запрос новостей в ленту, имитация
     useEffect(() => {
-        console.log(newsCount)
         switch (isOpen){
             case false: {
                 setNews([{title: "Россия и Мадагаскар подписали пакт о ненападении", time:"22:00"}, {title: "Посол Замбии в ЮАР отравился несвежими мандаринами", time:"23:20"}])
@@ -36,6 +37,7 @@ export const News = ({isOpen}) => {
             default: return true
         }
     }, [isOpen, newsCount])
+
     const newsRender = news.map((e, i) => <NewsDetail title={e.title} time={e.time} isOpen={isOpen} key={i}/>)
     return (
         <div className={isOpen ? classes.wrapperIsOpen : classes.wrapper} ref={newsRef}>

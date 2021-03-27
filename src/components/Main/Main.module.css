@@ -1,6 +1,21 @@
 .wrapper {
     padding-top: 60px;
-    height: 2000px;
     width: 75%;
     background-color: rgb(236, 235, 235);
+    position: relative;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    .wrapper {
+        padding-top: 10px;
+    }
+
 }

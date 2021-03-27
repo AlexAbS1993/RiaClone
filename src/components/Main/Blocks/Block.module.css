@@ -1,0 +1,26 @@
+.wrapper {
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 0px 10px 10px;
+    gap: 20px;
+}
+
+.wrapper>div{
+    margin-top: 20px;   
+}
+
+.wrapper>div>div {
+    box-shadow: 0 0 5px gray;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 910px){
+    .wrapper {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+}
